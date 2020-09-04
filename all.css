@@ -1,0 +1,190 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+#map{
+	width: 100%;
+	height: 100%;
+}
+.loading{
+	position: absolute;
+	left: 350px;
+	top: 80px;
+}
+.leaflet-left{
+	left: 95%;
+}
+.marker-cluster-small{
+	background-color: rgba(181, 226, 140, 0.6);
+}
+.marker-cluster-small div{
+	background-color: rgba(110, 204, 57, 0.6);
+}
+
+.marker-cluster-medium{
+	background-color: rgba(241, 211, 87, 0.6);
+}
+.marker-cluster-medium div{
+	background-color: rgba(240, 194, 12, 0.6);
+}
+
+.marker-cluster-large{
+	background-color: rgba(253, 156, 115, 0.6);
+}
+.marker-cluster-large div{
+	background-color: rgba(241, 128, 23, 0.6);
+}
+
+.marker-cluster{
+	background-clip: padding-box;
+	border-radius: 20px;
+}
+.marker-cluster div{
+	width: 30px;
+	height: 30px;
+	margin-left: 5px;
+	margin-top: 5px;
+	text-align: center;
+	border-radius: 15px;
+	font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.marker-cluster span{
+	line-height: 30px;
+}
+.leaflet-popup-content h2{
+	font-size: 20px;
+}
+.leaflet-popup-content p{
+	margin: 12px 0;
+	font-size: 14px;
+}
+.map_mask, .pharmacy_mask{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.map_mask p, .pharmacy_mask p{
+	width: 150px;
+	height: 30px;
+	border-radius: 16px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+}
+.map_mask .map_mask_adult{margin-right: 10px;}
+.map_mask .map_mask_adult, .pharmacy_mask .list_mask_adult{background-color: #73c0d8;}
+.map_mask .map_mask_child, .pharmacy_mask .list_mask_child{background-color: #ffa573;}
+
+.mask_siderbar{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	width: 350px;
+	height: 100vh;
+	background-color: #fff;
+	transition: .3s;
+}
+
+.mask_siderbar label{
+	position: absolute;
+	width: 25px;
+	height: 70px;
+	background-color: #73c0d8;
+	color: #fff;
+	left: 350px;
+	line-height: 70px;
+	text-align: center;
+	border-radius: 0 5px 5px 0;
+}
+#mask_siderbar_switch{position: absolute; bottom: 12px; left: -12px; z-index: -1;}
+#mask_siderbar_switch:checked ~ .mask_siderbar{transform: translateX(-100%);}
+#mask_siderbar_switch:checked ~ .mask_siderbar label .fa {transform: rotate(180deg);}
+
+
+.nav_info{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.nav h2{
+	font-size: 30px;
+	font-weight: 400;
+	color: #fff;
+}
+.nav p{
+	font-size: 16px;
+	color: #fff;
+}
+.nav span{
+	font-size: 20px;
+	color: #ff0;
+	font-weight: 700;
+}
+.nav_county{
+	padding: 10px 0;
+	text-align: center;
+}
+.change_county,.change_cunli{
+	width: 150px;
+	height: 30px;
+	border-radius: 20px;
+	background: #fff url(https://upload.cc/i1/2020/05/20/wpnofC.png) no-repeat 95% center;
+	background-size: 14px;
+	-webkit-appearance: none;
+	border: none;
+	padding: 0 10px;
+	font-size: 16px;
+	margin: 0 5px;
+}
+
+.pharmacy_list ul{
+	height: 100vh;
+	overflow: scroll;
+}
+.pharmacy_list li{
+	padding: 0 10px;
+	line-height: 1.8;
+}
+.pharmacy_list li{
+	border-bottom: 1px solid #D3D3D3;
+}
+.pharmacy_list .pharmacy_mask{
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.mask_siderbar{
+		width: 280px;
+	}
+	.mask_siderbar label{
+		left: 280px;
+	}
+	.change_county, .change_cunli, .map_mask p, .pharmacy_mask p{
+		width: 120px;
+	}
+	.nav h2{
+		font-size: 26px;
+	}
+	.nav p{
+		font-size: 12px;
+	}
+	.pharmacy_list li p{
+		font-size: 14px;
+	}
+	.pharmacy_list li h2{
+		font-size: 24px;
+	}
+	.leaflet-left{
+		left: 88%;
+	}
+}
+
+
