@@ -11,9 +11,11 @@ html,body{
 	width: 100%;
 	height: 100%;
 }
-.loading{
-	display: block;
-	margin: 0 auto;
+.loadingarea{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .leaflet-left{
 	left: 95%;
@@ -160,12 +162,24 @@ html,body{
 }
 
 @media screen and (max-width: 768px) {
+	.loading{
+		width: 100%;
+		height: auto;
+	}
 	.mask_siderbar{
 		width: 280px;
+		left: -280px;
 	}
+	#mask_siderbar_switch:checked ~ .mask_siderbar{transform: translateX(100%);}
+
 	.mask_siderbar label{
 		left: 280px;
 	}
+	.mask_siderbar label .fa{
+		transform: rotate(180deg);
+	}
+	#mask_siderbar_switch:checked ~ .mask_siderbar label .fa {transform: rotate(360deg);}
+
 	.change_county, .change_cunli, .map_mask p, .pharmacy_mask p{
 		width: 120px;
 	}

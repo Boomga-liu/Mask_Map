@@ -77,8 +77,8 @@ function getUserPosition(position){
 let map;
 let userposition = [];
 function setUserPosition(lat, lng){
-	let loading = document.querySelector('.loading');
-	loading.style.display = 'none';
+	let loadingarea = document.querySelector('.loadingarea');
+	loadingarea.style.display = 'none';
 	map = L.map('map', {
 		    center: [lat, lng],
 		    zoom: 16
