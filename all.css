@@ -101,12 +101,12 @@ body {
 
 .map_mask .map_mask_adult,
 .pharmacy_mask .list_mask_adult {
-	background-color: #73c0d8;
+	background-color: #FFB5B5;
 }
 
 .map_mask .map_mask_child,
 .pharmacy_mask .list_mask_child {
-	background-color: #ffa573;
+	background-color: #66B3FF;
 }
 
 .mask_siderbar {
