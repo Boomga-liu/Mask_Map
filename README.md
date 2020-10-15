@@ -6,4 +6,4 @@
 
 [口罩地圖](https://boomga-liu.github.io/Mask_Map/) 作者：Boomga-liu 
 
-![MaskMap](https://upload.cc/i1/2020/09/18/kOuFj0.png "MaskMap")
+![image](images/README-mask-map.png "Mask_Map")
