@@ -101,12 +101,12 @@ body {
 
 .map_mask .map_mask_adult,
 .pharmacy_mask .list_mask_adult {
-	background-color: #FFB5B5;
+	background-color: #73C0D8;
 }
 
 .map_mask .map_mask_child,
 .pharmacy_mask .list_mask_child {
-	background-color: #66B3FF;
+	background-color: #FFA573;
 }
 
 .mask_siderbar {
@@ -126,7 +126,7 @@ body {
 	position: absolute;
 	width: 25px;
 	height: 70px;
-	background-color: #FFB5B5;
+	background-color: #73C0D8;
 	color: #fff;
 	left: 350px;
 	line-height: 70px;
